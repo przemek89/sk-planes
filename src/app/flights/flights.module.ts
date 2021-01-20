@@ -8,6 +8,7 @@ import { FlightsComponent } from './flights.component';
   declarations: [FlightsComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [FlightsComponent]
 })
 export class FlightsModule { }
