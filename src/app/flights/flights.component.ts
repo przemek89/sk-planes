@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { FlightsService } from '../core/services/flights.service';
 import { Flight } from '../models/flight.model';
+import { DetailsComponent } from './details/details.component';
 import { NewFlightComponent } from './new-flight/new-flight.component';
 
 @Component({
@@ -21,5 +22,9 @@ export class FlightsComponent {
 
   openNewFlightModal() {
     this.dialog.open(NewFlightComponent);
+  }
+
+  showDetails(flight) {
+    this.dialog.open(DetailsComponent, {data: flight});
   }
 }
