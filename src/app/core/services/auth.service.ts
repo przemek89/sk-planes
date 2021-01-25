@@ -19,6 +19,10 @@ export class AuthService {
         return this. fireAuth.signOut();
     }
 
+    isLoggedIn() {
+        return !!this.userData;
+    }
+
     get user() {
         return this.userData;
     }
