@@ -15,6 +15,10 @@ export class AuthService {
             .then(userCredential => this.userData = userCredential.user)
     }
 
+    logout() {
+        return this. fireAuth.signOut();
+    }
+
     get user() {
         return this.userData;
     }
