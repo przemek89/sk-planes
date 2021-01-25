@@ -9,7 +9,6 @@ import { environment } from 'src/environments/environment';
 import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { FlightsModule } from './flights/flights.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { FlightsModule } from './flights/flights.module';
     AngularFireModule.initializeApp(environment.firebase),
     MaterialModule,
     AngularFireAuthModule,
-    AngularFireDatabaseModule,
-    FlightsModule
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
